@@ -44,7 +44,40 @@
         country: 'Hungary',
         avatar: '../assets/avatar-4.png'
       }
-    ];
+    ]
+    
+    const wrapper = document.querySelector('.wrapper')
+    socials.forEach(user => {
+      let socialWrapper = document.createElement('div');
+      socialWrapper.style = 'border: 1px solid black';
+
+      let avatar = document.createElement('img');
+      avatar.src = user.avatar;
+      avatar.alt = user.name
+      socialWrapper.appendChild(avatar);
+
+      let name = document.createElement('h3');
+      name.innerText=user.name;
+      socialWrapper.appendChild(name)
+      
+      let country = document.createElement('p');
+      country.innerText = user.country;
+
+      let city = document.createElement('a')
+      city.src = '#';
+      city.appendChild(document.createTextNode(`${user.city}, `))
+      country.prepend(city)
+
+      socialWrapper.appendChild(country)
+
+
+      let button = document.createElement('button')
+      button.innerText='Add Friend'
+      socialWrapper.append(button)
+
+
+      wrapper.appendChild(socialWrapper)
+    })
 
   </script>
 </body>

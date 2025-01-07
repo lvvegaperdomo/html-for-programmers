@@ -10,6 +10,73 @@
 
 <body>
   
+  <form action="" method="post">
+    <!-- Contact Info -->
+  <div>
+
+      <div>
+        <h2>Recipient Details</h2>
+        
+        <label for="recipient-name">Full Name</label>
+        <br>
+        <input type="text" id="full-name">
+        <br>
+        <br>
+        
+      <label for="phone-num">Telephone Number</label>
+      <br>
+      <input type="tel" id="phone-num">
+      <br><br>
+      
+      <label for="address">Address</label>
+      <br>
+      <input type="text" id="address">
+      <br><br>
+    </div>
+    
+    <div>
+      <h2>Sender Details</h2>
+      <label for="sender-name">Full Name</label>
+      <br>
+      <input type="text" id="sender-name">
+      <br><br>
+      
+      <label for="sender-email">Email Address</label>
+      <br>
+      <input type="email" id="sender-email">
+      <br><br>
+    </div>
+  </div>
+
+  <!-- Order Details -->
+   <div>
+     <h2>Order</h2>
+     <div>
+       <label for="bouquets">Bouquet Type</label>
+       <br>
+       <select name="bouquets" id="bouquets">
+         <option value="basic">Basic Bouquet - $24.99</option>
+         <option value="premium">Premium Bouquet - $49.99</option>
+         <option value="premium-plus">Premium Bouquet + Chocolate - $69.99</option>
+        </select>
+        <br><br>
+      </div>
+      
+      <div>
+        <label for="message">Message</label>
+        <br>
+        <textarea type="message" id="message"></textarea>
+        <br>
+
+        <button type="submit">Checkout</button>
+      </div>
+    </div>
+
+
+
+  
+  </form>
+
 </body>
 
 </html>
